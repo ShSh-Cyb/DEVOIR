@@ -8,24 +8,44 @@
 </head>
 <body>
     <header>
-        <nav>Accuil</nav>
-        <nav>Contacter-moi</nav>
+        <nav>
+          <a href="#section1">Accueil</a>
+          <a href="#section2">Contacter-moi</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <section id="section1">
+            <img src="https://picsum.photos/300" alt="Image aléatoire" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique cumque veniam ipsam? Explicabo aliquam assumenda rem facilis similique adipisci placeat beatae esse, dolorum tempora quo ullam non vel eos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem fugit, dolorum, a sapiente autem magnam, delectus necessitatibus dolores architecto temporibus! Nulla illo aspernatur perspiciatis odit ea totam aut nobis!</p>
         </section>
-        <section>
-            <img src="" alt="">
-            <form action="">
+        <section id="section2">
+            <img src="https://picsum.photos/300" alt="Image aléatoire"/>
+            <!-- Formulaire de contact -->
+            <form id="contact-form">
+            <!-- Champ Nom -->
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" required /> <!-- Champ obligatoire -->
 
+              <!-- Champ Prénom -->
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" required /> <!-- Champ obligatoire -->
+
+              <!-- Champ Email -->
+              <label for="email">Email :</label>
+              <input type="email" id="email" required /> <!-- Champ obligatoire avec validation email -->
+
+              <!-- Bouton de validation -->
+              <button type="submit">Validez</button>
             </form>
+
+            <!-- Message de confirmation (caché par défaut en CSS, affiché via JS) -->
+            <p id="confirmation">Votre demande est bien envoyée !</p>
         </section>
     </main>
     <footer>
-        <!-- Php -->
+      <p>Page web faite par Shoghi</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
