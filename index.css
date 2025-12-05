@@ -37,6 +37,23 @@ padding: 20px;
   column-gap: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.grid img {
+  width: 80%;
+  margin: 20px auto;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "vi bt";
+}
 
 
 
