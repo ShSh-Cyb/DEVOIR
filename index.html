@@ -15,11 +15,12 @@
     </header>
     <main>
         <section id="section1">
-            <img src="https://picsum.photos/300" alt="Image aléatoire" />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique cumque veniam ipsam? Explicabo aliquam assumenda rem facilis similique adipisci placeat beatae esse, dolorum tempora quo ullam non vel eos?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem fugit, dolorum, a sapiente autem magnam, delectus necessitatibus dolores architecto temporibus! Nulla illo aspernatur perspiciatis odit ea totam aut nobis!</p>
+          <div class="flexbox">
+            <img src="https://picsum.photos/300" alt="Image aléatoire" /><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique cumque veniam ipsam? Explicabo aliquam assumenda rem facilis similique adipisci placeat beatae esse, dolorum tempora quo ullam non vel eos?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem fugit, dolorum, a sapiente autem magnam, delectus necessitatibus dolores architecto temporibus! Nulla illo aspernatur perspiciatis odit ea totam aut nobis!</p>
+          </div>
         </section>
-        <section id="section2">
+        <div class="grid-container">
+          <section id="section2">
             <img src="https://picsum.photos/300" alt="Image aléatoire"/>
             <!-- Formulaire de contact -->
             <form id="contact-form">
@@ -38,6 +39,7 @@
               <!-- Bouton de validation -->
               <button type="submit">Validez</button>
             </form>
+            </div>
 
             <!-- Message de confirmation (caché par défaut en CSS, affiché via JS) -->
             <p id="confirmation">Votre demande est bien envoyée !</p>

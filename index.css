@@ -1,7 +1,6 @@
 *{
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 10px; 
   padding: 10px; 
 }
 
@@ -31,4 +30,22 @@ section {
 background: rgb(255, 247, 0);
 margin: 40px auto;
 padding: 20px;
+}
+.flexbox {
+  display: flex;
+  padding: 10px;
+  column-gap: 20px;
+}
+
+
+
+
+
+footer {
+  background: #c35dbe;
+  color: white;
+  display: flex; /* Active flexbox pour centrer le contenu. */
+  justify-content: center; /* Centre horizontalement le texte. */
+  align-items: center; /* Centre verticalement le texte. */
+  height: 80px; /* Hauteur fixe du footer. */
 }
